@@ -68,15 +68,23 @@ a {
 }
 
 /* Header */
+.header-main {
+  margin: 0 auto;
+
+  background-color: var(--almostwhite-color);
+}
 .header {
-  width: 1440px;
   display: flex;
   align-items: center;
-  background-color: var(--almostwhite-color);
-  margin: 0 auto;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  margin-left: 0;
 }
+header .container {
+  width: auto;
 
+  padding-left: 80px;
+  padding-right: 40px;
+}
 .header-list {
   display: flex;
   align-items: center;
@@ -84,13 +92,12 @@ a {
 }
 
 .header .logo {
-  margin: 39px auto 38px 80px;
+  margin: 39px auto 38px 0;
   color: var(--almostblack-color);
 }
 
 .header-button {
   margin-left: auto;
-  margin-right: 40px;
 
   line-height: 1.22;
   text-transform: uppercase;
@@ -109,16 +116,23 @@ a {
   line-height: 1.22;
 }
 /* section 1 Hero */
-.hero {
-  width: 1440px;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: center;
-}
-.hero-text {
+.hero-section {
   background-color: var(--grey-color);
+  width: auto;
+  margin: 0 auto;
+}
+.hero img {
+  width: 50%;
+}
+.hero-section .container {
+  width: auto;
+  padding: 0;
+  display: flex;
+}
+
+.hero-text {
   padding: 154px 126px 135px 162px;
+  margin-right: auto;
 }
 
 .hero h1 {
@@ -142,23 +156,21 @@ a {
   padding: 23px 35px 23px 35px;
   box-sizing: border-box;
 }
-.hero img {
-  width: 720px;
-}
 
 /* Section2   Feature Split Right */
 
-.split {
+.split-section {
+  background-color: var(--grey-color);
   width: auto;
   margin: 0 auto;
+}
+.split-section .container {
+  width: auto;
+  padding: 0;
   display: flex;
-  justify-content: center;
 }
-.split img {
-  width: 720px;
-}
+
 .split-text {
-  background-color: var(--grey-color);
   padding: 164px 166px 104px 112px;
 }
 .split-text h2 {
@@ -180,6 +192,9 @@ a {
 
   padding: 21px 46px 21px 47px;
   box-sizing: border-box;
+}
+.split img {
+  width: 50%;
 }
 
 /* Section3 Posts Tall */
